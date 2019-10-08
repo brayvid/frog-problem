@@ -4,3 +4,5 @@ Imagine some number of lillypads spanning a river, and a frog at one bank. The f
 
 For a given number of lillypads n, what is the expected (average) number of jumps for the frog to make it to the opposite bank?
 
+[Python solution hosted on Colaboratory](https://colab.research.google.com/drive/1SuQrfVUmCPa2AAoDLBZ2fLjJop_cctx_)
+
