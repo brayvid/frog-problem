@@ -6,12 +6,18 @@ For a given number of initially available positions *n* (the lillypads plus one 
 
 [My solution in Google Colab](https://colab.research.google.com/drive/1SpVCQgN3CcJgsBXm8UwBuC68gV8EKctP)
 
-####  Examples
+####  Example queries
+`lengthProb(n,k)` returns the probability of the frog taking a path of length *k* given there are *n* lillypads.
 ```python
 >>> lengthProb(5,1)
 0.2
 ```
+`expectedSteps(n)` returns the expected number of steps given *n* lillypads.
 ```python
 >>> expectedSteps(10)
 2.9289682539682538
 ```
+#### Expected number of steps for several *n*
+<p align="left">
+  <img src="https://github.com/brayvid/FrogProblem/blob/master/expectation.png"><br>
+</p>
