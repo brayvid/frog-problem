@@ -18,6 +18,6 @@ For a given number of initially available positions *n* (the lillypads plus the 
 2.9289682539682538
 ```
 #### Expected number of steps for several values of *n*
-<p align="left">
+<p align="center">
   <img src="https://github.com/brayvid/FrogProblem/blob/master/TheFrogProblem.png">
 </p>
