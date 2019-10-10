@@ -17,7 +17,7 @@ For a given number of initially available positions *n* (the lillypads plus one 
 >>> expectedSteps(10)
 2.9289682539682538
 ```
-#### Expected number of steps for several *n*
+#### Expected number of steps for several values of *n*
 <p align="left">
   <img src="https://github.com/brayvid/FrogProblem/blob/master/expectation.png"><br>
 </p>
