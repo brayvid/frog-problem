@@ -19,5 +19,5 @@ For a given number of initially available positions *n* (the lillypads plus the 
 ```
 #### Expected number of steps for several values of *n*
 <p align="left">
-  <img src="https://github.com/brayvid/FrogProblem/blob/master/frogproblem.png">
+  <img src="https://github.com/brayvid/FrogProblem/blob/master/TheFrogProblem.png">
 </p>
