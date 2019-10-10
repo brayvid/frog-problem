@@ -4,5 +4,5 @@ Imagine some number of lillypads spanning a river, and a frog at one bank. The f
 
 For a given number of initially available positions *n* (the lillypads plus one terminal position), what is the expected number of jumps for the frog to make it to the opposite bank?
 
-[My solution in a Jupyter notebook hosted on Google Colaboratory](https://colab.research.google.com/drive/1SpVCQgN3CcJgsBXm8UwBuC68gV8EKctP)
+[My solution in a Jupyter notebook hosted on Google Colab](https://colab.research.google.com/drive/1SpVCQgN3CcJgsBXm8UwBuC68gV8EKctP)
 
