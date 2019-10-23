@@ -17,7 +17,7 @@ For a given number of lillypads *p* , what is the expected number of jumps for t
 >>> expectedSteps(1)
 1.5
 ```
-#### Expected number of steps for several values of *n*
+#### Expected number of steps for several values of *p*
 <p align="center">
   <img src="https://github.com/brayvid/FrogProblem/blob/master/FrogProblem.png">
 </p>
