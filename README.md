@@ -12,7 +12,7 @@ For a given number of lillypads *p* , what is the expected number of jumps for t
 >>> lengthProb(4,1)
 0.2
 ```
-`expectedSteps(n)` returns the expected number of steps given *p* lillypads.
+`expectedSteps(p)` returns the expected number of steps given *p* lillypads.
 ```python
 >>> expectedSteps(1)
 1.5
