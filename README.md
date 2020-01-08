@@ -4,7 +4,7 @@ Imagine some number of lillypads spanning a river, and a frog at one bank. The f
 
 For a given number of initially available lillypads *p*, what is the expected number of jumps for the frog to make it across?
 
-[My solution in Google Colab](https://colab.research.google.com/drive/1bAwxZb7wY3hD2ebMnfH-bR9Irw4oXr0p)
+[My solution in Google Colab](https://colab.research.google.com/drive/1vMQ81rhLTEz48cXQ6XUiBcQ0KKtZb5JA)
 
 ####  Example queries
 `lengthProb(p,k)` returns the probability of the frog taking a path of length *k* given there are *p* lillypads.
