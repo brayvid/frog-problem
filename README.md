@@ -1,6 +1,6 @@
 ### The Frog Problem
 #### Presented by Timandra Harkness and Matt Parker in [Can you solve The Frog Problem?](https://www.youtube.com/watch?v=ZLTyX4zL2Fc)
-Imagine some number of lilypads span a river, and a frog is at one bank. To get across, it randomly selects one of the lilypads ahead of it with equal probability (or the far bank), jumps there, and repeats this process until it has reached the opposite bank.
+Imagine some number of lilypads span a river, and a frog is at one bank. To get across, it randomly selects one of the lilypads ahead of it with equal probability (or the far bank), jumps there, and repeats this process until it has crossed.
 
 For a given number of lilypads *n*, what is the expected number of jumps for the frog to make it across?
 
