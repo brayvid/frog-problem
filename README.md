@@ -7,7 +7,7 @@ For a given number of initially available lillypads *n*, what is the expected nu
 [My solution in Google Colab](https://colab.research.google.com/drive/1vMQ81rhLTEz48cXQ6XUiBcQ0KKtZb5JA)
 
 ####  Example queries
-`lengthProb(n,k)` returns the probability of the frog taking a path of length *k* given there are *n* lillypads.
+`lengthProb(n,k)` returns the probability of the frog taking a path of length *k* given *n* lillypads.
 ```python
 >>> lengthProb(4,1)
 0.2
