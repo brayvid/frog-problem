@@ -17,7 +17,7 @@ For a given number of initially available lillypads *n*, what is the expected nu
 >>> expectedSteps(1)
 1.5
 ```
-#### Expected number of steps for several values of *p*
+#### Expected number of steps for several values of *n*
 <p align="center">
   <img src="https://github.com/brayvid/FrogProblem/blob/master/FrogProblem.png">
 </p>
