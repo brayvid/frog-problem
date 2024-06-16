@@ -1,4 +1,4 @@
-### The Frog Problem
+# The Frog Problem
 <a href="https://colab.research.google.com/github/brayvid/frog-problem/blob/main/FrogProblem.ipynb" rel="Open in Colab"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab" /></a>
 
 #### Presented by Timandra Harkness and Matt Parker in [Can you solve The Frog Problem?](https://www.youtube.com/watch?v=ZLTyX4zL2Fc)
