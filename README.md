@@ -223,6 +223,6 @@ pl.show()
 
 
     
-![png](FrogProblem_files/FrogProblem_40_0.png)
+![png](FrogProblem.png)
     
 
