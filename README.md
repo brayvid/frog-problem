@@ -26,7 +26,7 @@ from matplotlib import pyplot as pl # plots points
 #### A few definitions
 
 * Let $p$ be the number of lilypads present. Note that the maximum number of jumps is $p+1$.
-* Let $k$ be the number of jumps the frog uses to cross the river, $ 1 \leq k \leq p+1$.
+* Let $k$ be the number of jumps the frog uses to cross the river, $1\leq k\leq p+1$.
 * Let $r={p \choose k-1}$ count the number of ways the frog can cross the river in exactly $k$ jumps.
 
 #### Example of a route
