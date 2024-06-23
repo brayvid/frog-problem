@@ -9,7 +9,7 @@
 
 Imagine some number of lilypads spanning a river in a line, and a frog at one bank. The frog wants to cross the river. To move forward, it selects one of the lilypads with uniform probability (or the far bank, which we include as an option), hops there, selects a new position closer to its destination, and repeats this process until it eventually reaches the far side.
 
-<strong>*For a given number of lilypads $p$, what is the expected number of jumps for the frog to make it across the river?*</strong>
+<strong>*For a given number of lilypads p, what is the expected number of jumps for the frog to make it across the river?*</strong>
 
 ### Solution
 
