@@ -225,4 +225,6 @@ pl.show()
     
 ![png](FrogProblem.png)
     
+----
 
+<p align="center">&copy; Copyright 2026 <a href="https://blakerayvid.com">Blake Rayvid</a>. All rights reserved.</p>
