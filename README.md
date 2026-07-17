@@ -14,19 +14,41 @@ Imagine some number of lilypads spanning a river in a line, and a frog at one ba
 #### Expected Number of Jumps
 
 Let $E_n$ be the expected jumps to reach the destination from $n$ steps away. Since the frog lands at any remaining distance $i < n$ with uniform probability $\frac{1}{n}$, we establish the recurrence:
-$$E_n = 1 + \frac{1}{n} \sum_{i=0}^{n-1} E_i \quad \text{with } E_0 = 0$$
+
+$$
+E_n = 1 + \frac{1}{n} \sum_{i=0}^{n-1} E_i \quad \text{with } E_0 = 0
+$$
 
 Multiplying by $n$ gives $n E_n = n + \sum_{i=0}^{n-1} E_i$. Subtracting the equation for $n-1$ isolates the transition step:
-$$n E_n - (n-1) E_{n-1} = 1 + E_{n-1} \implies E_n - E_{n-1} = \frac{1}{n}$$
+
+$$
+n E_n - (n-1) E_{n-1} = 1 + E_{n-1}
+$$
+
+Expanding and simplifying the equation:
+
+$$
+n E_n - n E_{n-1} + E_{n-1} = 1 + E_{n-1} \implies n(E_n - E_{n-1}) = 1 \implies E_n - E_{n-1} = \frac{1}{n}
+$$
 
 This telescopes directly to the $n$-th Harmonic number, $H_n$:
-$$E_n = H_n = \sum_{r=1}^{n} \frac{1}{r}$$
+
+$$
+E_n = H_n = \sum_{r=1}^{n} \frac{1}{r}
+$$
 
 For a river with $p$ lilypads, the total distance to cover is $p+1$ steps. Therefore, the expected number of jumps is:
-$$E(\text{steps}) = H_{p+1} = \sum_{r=1}^{p+1} \frac{1}{r}$$
+
+$$
+E(\text{jumps}) = H_{p+1} = \sum_{r=1}^{p+1} \frac{1}{r}
+$$
 
 For large values of $p$, this expectation can be approximated using the natural logarithm:
-$$H_{p+1} \approx \ln(p+1) + \gamma$$
+
+$$
+H_{p+1} \approx \ln(p+1) + \gamma
+$$
+
 where $\gamma \approx 0.57721$ is the Euler-Mascheroni constant.
 
 #### Probability Distribution of Jump Counts
@@ -34,16 +56,28 @@ where $\gamma \approx 0.57721$ is the Euler-Mascheroni constant.
 Let $G_n(x) = \sum_{k=0}^{n} P(K=k) x^k$ be the Probability Generating Function (PGF) for the steps to cover distance $n$. 
 
 Because a jump from distance $n$ lands at distance $j < n$ with probability $\frac{1}{n}$ and costs $1$ step, the relation is:
-$$G_n(x) = \frac{x}{n} \sum_{j=0}^{n-1} G_j(x) \quad \text{with } G_0(x) = 1$$
+
+$$
+G_n(x) = \frac{x}{n} \sum_{j=0}^{n-1} G_j(x) \quad \text{with } G_0(x) = 1
+$$
 
 Subtracting the relation for $n-1$ simplifies the recurrence to:
-$$G_n(x) = G_{n-1}(x) \left( \frac{1}{n}x + \frac{n-1}{n} \right)$$
+
+$$
+G_n(x) = G_{n-1}(x) \left( \frac{1}{n}x + \frac{n-1}{n} \right)
+$$
 
 Applying this inductively over the total distance $p+1$ yields the product:
-$$G_{p+1}(x) = \prod_{i=1}^{p+1} \left( \frac{1}{i}x + \frac{i-1}{i} \right)$$
+
+$$
+G_{p+1}(x) = \prod_{i=1}^{p+1} \left( \frac{1}{i}x + \frac{i-1}{i} \right)
+$$
 
 The probability of taking exactly $k$ jumps is the coefficient of $x^k$ in this product, which corresponds to the normalized unsigned Stirling numbers of the first kind:
-$$P(K = k) = \frac{\left[ \begin{matrix} p+1 \\ k \end{matrix} \right]}{(p+1)!}$$
+
+$$
+P(K = k) = \frac{\begin{bmatrix} p+1 \\ k \end{bmatrix}}{(p+1)!}
+$$
 
 We obtain these coefficients computationally by convolving the linear term coefficient vectors $\left[\frac{1}{i}, \frac{i-1}{i}\right]$ for $i = 1, \dots, p+1$.
 
@@ -71,6 +105,8 @@ def lengthProbDistribution(p):
     poly = np.array([1.0])
     for i in range(1, p + 2):
         poly = np.convolve(poly, [1.0 / i, (i - 1.0) / i])
+    # The poly array contains coefficients in descending order of powers: [x^(p+1), ..., x^1, x^0]
+    # We reverse it to ascending order, and drop the constant x^0 term (which is always 0.0)
     return poly[::-1][1:]
 
 def lengthProb(p, k):
@@ -150,3 +186,4 @@ pl.show()
 ----
 
 <p align="center">&copy; Copyright 2026 <a href="https://blakerayvid.com">Blake Rayvid</a>. All rights reserved.</p>
+
